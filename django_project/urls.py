@@ -25,5 +25,5 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'), # new
     path('register/', views.SignUpView.as_view(), name='signup'),
     path('verification/', include('verify_email.urls')),	
-
+    path('account', views.my_page_view, name='account'),
 ]
